@@ -15,14 +15,9 @@ def create_dict():
                 ls.append(val)
             dictionary[key] = ls
                    
-        elif a == "no":
+			else:
             val = input(f"Enter a value for '{key}': ")
             dictionary[key] = val
-        else:
-            try:
-                a != "yes" or a != "no"
-            except:
-                print("I don't recognize your answer")
 
 
     print(dictionary)
